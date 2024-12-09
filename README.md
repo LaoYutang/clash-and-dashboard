@@ -18,6 +18,7 @@ docker run -d \
   --name clash \
   -v clash.yaml:/root/.config/clash/config.yaml \
   -p 8080:8080 -p 7890:7890 \
+  -e SERVER_PORT=8080
   clash-and-dashboard:latest
 ```
 
